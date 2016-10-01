@@ -1,5 +1,5 @@
 from flask import Flask
-
+from settings import APP_PROD
 app = Flask(__name__)
 
 class WebFactionMiddleware(object):
@@ -9,7 +9,8 @@ class WebFactionMiddleware(object):
         environ['SCRIPT_NAME'] = '/trump/'
         return self.app(environ, start_response)
 
-app.wsgi_app = WebFactionMiddleware(app.wsgi_app)
+if APP_PROD:
+    app.wsgi_app = WebFactionMiddleware(app.wsgi_app)
 
 from app import views
 
