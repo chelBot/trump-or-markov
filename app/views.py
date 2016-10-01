@@ -30,7 +30,7 @@ def fetch_data(file):
     # quotes.close()
     quotes_str = read_file(file)
     quotes_str = str(quotes_str)
-    if file == "app/static/markov.txt":
+    if file == APP_STATIC +  "/markov.txt":
         answer = "M"
         mc = MarkovChain(3)
         mc.add_string(quotes_str)
@@ -45,7 +45,7 @@ def fetch_data(file):
 @app.route('/')
 @app.route('/index')
 def index():
-    files = ["app/static/markov.txt", "app/static/trump.txt"]
+    files = [APP_STATIC + "/markov.txt", APP_STATIC + "/trump.txt"]
     file = files[random.randint(0,1)]
     sentence = fetch_data(file)
     return render_template("index.html", sentence=sentence[0].upper(), MorT=sentence[1])
