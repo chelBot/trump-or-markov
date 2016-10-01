@@ -1,0 +1,4 @@
+Markov chains are used everywhere. We can find them in speech recognition, text auto-suggestions, Bayesian inference, economics, genetics
+biology, and Google's PageRank. This election cycle we are even seeing them in the presidential campaign!
+
+ To learn more about Markov chains and how they are being used to "Make America Laugh Again", please visit: 
