@@ -16,6 +16,9 @@ var main = function(){
     }
     console.log(answer);
   });
+  $(".about").on("click", function(){
+    $(".dropdown-menu").toggle();
+  })
   $('img').on('dragstart', function(event) { event.preventDefault(); });
 };
 $(document).ready(main);

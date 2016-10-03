@@ -9,7 +9,7 @@ from settings import APP_STATIC
 
 
 def badEnd(word):
-    wordList = ["our", "the", "if", "for", "i", "we", "or", "and", "to", "a", "he", "she", "our", "they", "of"]
+    wordList = ["our", "the", "if", "for", "i", "we", "or", "and", "to", "a", "he", "she", "our", "they", "of", "it's", "very"]
     b = word in (wordList[:])
     return b
 def postProcess(ary):

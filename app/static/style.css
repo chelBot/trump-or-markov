@@ -18,6 +18,22 @@ body, .jumbotron{
 .container{
   text-align: center;
 }
+.about {
+  cursor: pointer;
+}
+.about, .dropdown-menu {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  left: auto;
+  width: 290px;
+  border-radius: 0;
+  padding: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/*.content{
+  text-align: left;
+}*/
 .choice-container {
   height:300px;
   position: relative;
